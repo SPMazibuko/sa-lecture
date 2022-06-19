@@ -157,15 +157,6 @@ const Dashboard = () => {
                             {/*<MdOutlineSchool className='card-icon'/>*/}
                         </div>
                     </div>
-                    <div className='dashboard__card'>
-                        <div className='box'>
-                            <h1>Top 0%</h1>
-                            <h3>Sfiso Mazibuko</h3>
-                        </div>
-                        <div className="icon-case">
-                            {/*<MdOutlineSchool className='card-icon'/>*/}
-                        </div>
-                    </div>
                 </div>
             </div>
              <div className='noticeboard__container'>

@@ -1,0 +1,61 @@
+.students__container{
+    position: fixed;
+    margin-top: 20vh;
+    margin-left: 20vw;
+    min-height: 80vh;
+    min-width: 80vw;
+    background: #999;
+}
+.students {
+    flex: 2;
+    background: white;
+    min-height: 20vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+.btn-add {
+    background: var(--color-primary);
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+}
+
+table {
+    padding: 10px;
+}
+
+th,td {
+text-align: left;
+padding: 8px;
+} 
+
+
+table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+
+.dashboard__user-icon{
+    font-size: 40px;
+}
+
+.image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }

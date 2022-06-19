@@ -69,3 +69,8 @@ nav sidebar__icon{
     position:absolute;
     bottom: -10rem;
 }
+
+span{
+    color: var(--color-primary-variant) !important;
+    font-size: 1.5em;
+}

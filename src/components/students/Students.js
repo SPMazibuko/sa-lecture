@@ -14,12 +14,12 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Draggable from 'react-draggable';
-import { Sidebar } from '../sidebar/Sidebar';
+import Sidebar from '../sidebar/Sidebar';
 import {IoIosInformationCircle} from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
-import { collection, getDocs,doc, deleteDoc, onSnapshot, setDoc } from "firebase/firestore";
-import { auth,db,storage,dbs } from '../../firebase';
-import { ref, set, onValue } from "firebase/database";
+import { doc, deleteDoc,} from "firebase/firestore";
+import { db,dbs } from '../../firebase';
+import { ref, onValue } from "firebase/database";
 
 function PaperComponent(props) {
     return (
@@ -55,21 +55,6 @@ export const Students = () => {
       };
 
 /*---------------------------- Fetch students data from the database -------------------*/
-    /*useEffect(()=>{
-        const unsub = onSnapshot(collection(db, "students"), (snapShot) =>{
-            let list = [];
-            snapShot.docs.forEach(doc=>{
-                list.push({id: doc.id, ...doc.data()});
-            });
-            setData(list);
-        },(error)=>{
-            console.log(error)
-        });
-        return ()=>{
-            unsub();
-        }
-    },[])*/
-
     useEffect(()=>{
         onValue(ref(dbs, 'students'), (snapshot) => {
             const student = snapshot.val();
@@ -85,11 +70,10 @@ export const Students = () => {
         <div>
             <Sidebar />
             <div className='dashboard__container'>
-                <div className='students__container'>
+                <div className='dashboard__top'>
                     <div className="students">
                         <div className="title">
                             <h2>Registered Students</h2>
-                            <button className= "btn-add" onClick={()=>navigate('/addstudent')}>Add New Student</button>
                         </div>
                         <TableContainer component={Paper} className="table">
                             <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -145,3 +129,5 @@ export const Students = () => {
         </div>
     );
 }
+
+ 
