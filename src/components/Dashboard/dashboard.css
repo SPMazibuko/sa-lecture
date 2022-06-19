@@ -1,0 +1,82 @@
+.dashboard__container{
+    position: absolute;
+    padding: 20px;
+    width: 80vw;
+    right: 0;
+    margin-left: 20rem;
+    height: 100%;
+}
+
+.dashboard__top {
+    display: flex;
+    width: 100%;
+}
+
+.dashboard__cards {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.dashboard__card {
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2rem;
+}
+
+.attendance__list {
+    flex: 2;
+    background: white;
+    margin-top: 5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    padding: 10px;
+}
+
+th,td {
+text-align: left;
+padding: 8px;
+} 
+
+
+table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;
+}
+
+.icon-case{
+    height: 50px;
+    width: 50px;
+}
+.card-icon{
+    font-size: 50px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+
+.btn-view {
+    background: var(--color-primary);
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+}
